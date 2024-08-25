@@ -1,8 +1,9 @@
 import mongoose from "mongoose";
 
+//buat cek kalo udah konek atau belum
 let isConnected = false;
 
-export const connectDB = async () => {
+export const connectToDB = async () => {
   mongoose.set('strictQuery', true);
 
   if (isConnected) {
@@ -20,6 +21,6 @@ export const connectDB = async () => {
     isConnected = true;
     console.log("mongoDB is connected");
   } catch (error) {
-    console.log("mongoDB connection failed", error);
+    console.log(error);
   }
 }
