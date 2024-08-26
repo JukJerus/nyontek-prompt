@@ -16,7 +16,7 @@ export const connectToDB = async () => {
       dbName: 'nyontekprompt',
       useNewUrlParser: true,
       useUnifiedTopology: true,
-    })
+    });
 
     isConnected = true;
     console.log("mongoDB is connected");
