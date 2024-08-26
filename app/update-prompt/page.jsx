@@ -54,7 +54,6 @@ const UpdatePrompt = () => {
   };
 
   return (
-
     <Suspense>
       <Form
         type='Edit'
